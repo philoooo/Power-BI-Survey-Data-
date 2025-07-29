@@ -41,6 +41,7 @@ First, I uploaded my .xlsx file into Power BI and transformed the query titled "
 
 8. To bring everything together visually, I applied the Highrise theme to give the dashboard a modern, consistent color scheme that makes the visuals stand out and feel cohesive.
 
+![Dashboard](https://github.com/philoooo/Power-BI-Survey-Data-/blob/main/prof1.PNG)
    
 ## Findings:
 This Power BI dashboard provides a clean and interactive breakdown of real survey responses from professionals in the data industry. It highlights patterns in job titles, salaries, favorite programming languages, regional trends, and perceptions of work-life balance and job satisfaction. It also visualizes how difficult people found it to break into the field, offering insights that can help newcomers and professionals alike.
