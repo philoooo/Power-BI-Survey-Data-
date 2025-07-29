@@ -1,28 +1,28 @@
 ## Power BI Dashboard: Breaking Down the Data Professional Survey Results
 ---
-First, I uploaded my .xlsx file into Power BI and transformed the query titled "Data Professional Survey" using Power Query to prepare it for visualization.
+  I uploaded my .xlsx file into Power BI and transformed the query titled "Data Professional Survey" using Power Query to prepare it for visualization.
 
 ## Data Cleaning
-- I deleted the columns ‘Browser’, ‘OS’, ‘City’, ‘Country’, and ‘Referrer’ because they contained mostly blank rows and weren’t necessary.
+1. I deleted the columns ‘Browser’, ‘OS’, ‘City’, ‘Country’, and ‘Referrer’ because they contained mostly blank rows and weren’t necessary.
 
-- For ‘Q1: Which Title Best Fits Your Current Role’, there were many repetitive or overly detailed entries. I split this column using a custom delimiter '(', set to split at the left-most occurrence. This created two parts: the first (.1) held cleaned-up job titles with only seven distinct values, which was much easier to work with. I removed the second part (.2) since it was no longer needed.
+2. For ‘Q1: Which Title Best Fits Your Current Role’, there were many repetitive or overly detailed entries. I split this column using a custom delimiter '(', set to split at the left-most occurrence. This created two parts: the first (.1) held cleaned-up job titles with only seven distinct values, which was much easier to work with. I removed the second part (.2) since it was no longer needed.
 
-- I repeated the same cleaning method for ‘Q5: Favorite Programming Language’, which had too many "Other" responses due to it being a free-text field. I used a colon : as the delimiter to simplify and separate the data into manageable values.
+3. I repeated the same cleaning method for ‘Q5: Favorite Programming Language’, which had too many "Other" responses due to it being a free-text field. I used a colon : as the delimiter to simplify and separate the data into manageable values.
 
-- To make ‘Q3: Current Yearly Salary (in USD)’ usable for numeric calculations, I duplicated the column and split it by digit-to-non-digit transitions, which created three columns.
+4. To make ‘Q3: Current Yearly Salary (in USD)’ usable for numeric calculations, I duplicated the column and split it by digit-to-non-digit transitions, which created three columns.
 
-  .1 had the first number in the range,
+    .1 had the first number in the range,
 
-  .2 included the second number (but with “k” or “-”),
+    .2 included the second number (but with “k” or “-”),
 
-  .3 just had “k” and was removed.
-- I then used Replace Values to remove “k” and “-” from .2, converted both .1 and .2 to whole numbers, and created a custom column called ‘Average Salary’ using the formula:
+    .3 just had “k” and was removed.
+5. I then used Replace Values to remove “k” and “-” from .2, converted both .1 and .2 to whole numbers, and created a custom column called ‘Average Salary’ using the formula:
 = ([Q3 Copy.1] + [Q3 Copy.2]) / 2.
-- I changed the data type of the new column to a decimal number.
+6. I changed the data type of the new column to a decimal number.
 
-- I also cleaned the ‘Q11: What country do you want to live in’ and ‘Q4: What industry do you work in’ columns using the same left-most parenthesis split method. After splitting, I removed the extra .2 columns and kept the simplified values.
+7. I also cleaned the ‘Q11: What country do you want to live in’ and ‘Q4: What industry do you work in’ columns using the same left-most parenthesis split method. After splitting, I removed the extra .2 columns and kept the simplified values.
 
-- Finally, I clicked Close & Apply to finish the data preparation.
+8. Finally, I clicked Close & Apply to finish the data preparation.
 
 ![FinishedColumns](https://github.com/philoooo/Power-BI-Survey-Data-/blob/main/prof2.PNG)
 
