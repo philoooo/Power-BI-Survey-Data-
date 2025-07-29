@@ -24,6 +24,8 @@ First, I uploaded my .xlsx file into Power BI and transformed the query titled "
 
 - Finally, I clicked Close & Apply to finish the data preparation.
 
+![FinishedColumns](https://github.com/philoooo/Power-BI-Survey-Data-/blob/main/prof2.PNG)
+
 ## Building the Dashboard
 1. I started by adding a title to the dashboard: "Breaking Down the Data Professional Survey Results."
 
