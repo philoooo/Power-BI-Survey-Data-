@@ -31,7 +31,7 @@
 
 2. I created a card visualization showing the count of unique IDs and renamed the field to “Total Survey Respondents.” I added another card that calculates the average of the Current Age column and renamed it “Average Age of Survey Respondents.”
 
-3. I built a stacked bar chart using ‘Q1: Which Title Best Fits Your Current Role’ for both the y-axis and the legend, and used the average of the Average Salary column as the value. This helped sort salaries by job title. I titled the chart “Average Salary by Job Title.”
+3. I built a bar chart using ‘Q1: Which Title Best Fits Your Current Role’ for both the y-axis and the legend, and used the average of the Average Salary column as the value. This helped sort salaries by job title. I titled the chart “Average Salary by Job Title.”
 
 4. For the programming language breakdown, I created a stacked column chart with ‘Q5: Favorite Programming Language’ on the x-axis and count of unique IDs on the y-axis. I added a legend showing job titles, then renamed the chart to “Favorite Programming Languages.”
 
